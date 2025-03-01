@@ -37,7 +37,7 @@ export default function Header() {
              <div className="flex items-center px-3 mb-[1px] bg-amber-200">
               <Button
                 variant='ghost'
-                className="text-gray-1000 flex items-center gap-1 text-base [&_svg]:size-6 "
+                className="text-gray-1000 cursor-pointer flex items-center gap-1 text-base [&_svg]:size-6 "
               >
                 <MenuIcon />
                 All
