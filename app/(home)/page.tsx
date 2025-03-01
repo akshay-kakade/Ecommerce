@@ -1,13 +1,8 @@
+import { HomeCarousel } from "@/components/shared/home/home-carousel";
+import data from "@/lib/data";
 
 
 export default async function Home() {
-  return (
-     <div >
-      <h1 className="text-center py-50">
-      suprise
-      </h1>
-       
-      </div>
-  
-  );
-}
+  return <HomeCarousel items={data.carousels} />
+  }
+/// 00:45:00

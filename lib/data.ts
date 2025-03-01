@@ -1,4 +1,6 @@
-const data = {
+
+
+ const data = {
     headerMenus: [
     {
     name: "Todays Deals",
@@ -33,6 +35,32 @@ const data = {
      },
 ], 
 
+carousels: [
+  {
+    title: '2',
+    image: '/sale.jpg',
+    url: '/search?category=cloths',
+    isPublished: true,
+  },
+  {
+    title: '.',
+    image: '/banner1.webp',
+    url: '/search?category=headphones',
+    isPublished: true,
+  },
+  {
+    title: '3',
+    image: '/banner25.jpg',
+    url: '/search?category=Tshirts',
+    isPublished: true,
+  },
+  {
+    title: '1',
+    url: '/search?category=electronics',
+    image: '/watch.jpg',
+    isPublished: true,
+  }
+]
 
 
 }

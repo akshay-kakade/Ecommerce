@@ -87,7 +87,7 @@ export default async function Search() {
             <button type="submit" 
                     className="bg-primary text-primary-foreground rounded-s-none rounded-e-md h-full px-3 py-2"
                     title="Search">
-                <SearchIcon className="w-6 h-6" />
+                <SearchIcon className="w-6 h-6 cursor-pointer" />
             </button>
         </form>
     );
