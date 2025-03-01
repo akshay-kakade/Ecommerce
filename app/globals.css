@@ -10,21 +10,21 @@
 }
 
 :root {
-  --background: #ffffff; /* White background */
-  --foreground: #000000; /* Black text for contrast */
+  --background: #ffffff; 
+  --foreground: #000000; 
   --card: #ffffff;
   --card-foreground: #000000;
   --popover: #ffffff;
   --popover-foreground: #000000;
-  --primary: #FFD700; /* Yellow primary color */
+  --primary: #FFD700; 
   --primary-foreground: #000000;
-  --secondary: #FFFACD; /* Light yellow secondary color */
+  --secondary: #FFFACD; 
   --secondary-foreground: #000000;
   --muted: #FFFACD;
   --muted-foreground: #000000;
   --accent: #FFD700;
   --accent-foreground: #000000;
-  --destructive: #FF4500; /* OrangeRed destructive color */
+  --destructive: #FF4500;
   --destructive-foreground: #ffffff;
   --border: #FFD700;
   --input: #FFFACD;
@@ -46,8 +46,8 @@
 }
 
 .dark {
-  --background: #000000; /* Dark background for dark mode */
-  --foreground: #FFD700; /* Yellow text for dark mode */
+  --background: #000000; 
+  --foreground: #FFD700; 
   --card: #000000;
   --card-foreground: #FFD700;
   --popover: #000000;
@@ -125,5 +125,14 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .header-button {
+    @apply cursor-pointer p-1 border border-transparent hover:bg-amber-300 rounded-[5px];
+  }
+  .h1-bold {
+    @apply font-bold text-2xl lg:text-3xl;
   }
 }
