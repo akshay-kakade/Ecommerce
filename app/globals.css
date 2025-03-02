@@ -47,7 +47,7 @@
 
 .dark {
   --background: #000000; 
-  --foreground: #FFD700; 
+  --foreground: #ffd900; 
   --card: #000000;
   --card-foreground: #FFD700;
   --popover: #000000;
@@ -134,5 +134,8 @@
   }
   .h1-bold {
     @apply font-bold text-2xl lg:text-3xl;
+  }
+  .h2-bold {
+    @apply font-bold text-lg lg:text-xl;
   }
 }
