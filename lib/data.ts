@@ -117,7 +117,7 @@ import { toSlug } from './utils'
       countInStock: 14,
       description:
         'Elevate your outfit with this soft long sleeve t shirt men. This full sleeves tee is the ultimate upgrade from your regular cotton t-shirt. ',
-      sizes: ['XL', 'XXL'],
+      sizes: ['M','XL', 'XXL'],
       colors: ['Yellow', 'White'],
   
       reviews: [],
