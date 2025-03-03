@@ -1,3 +1,4 @@
+import { auth } from '@/auth'
 import { Metadata } from 'next'
 import { redirect } from 'next/navigation'
 
