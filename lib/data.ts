@@ -709,6 +709,7 @@ import { toSlug } from './utils'
 
 
  const data: Data = {
+  users: [],
   products,
     headerMenus: [
     {
