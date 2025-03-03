@@ -15,4 +15,3 @@ export async function signInWithCredentials(user: IUserSignIn) {
     redirect(redirectTo.redirect)
   }
 
-  // 2:50:00

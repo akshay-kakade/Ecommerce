@@ -14,7 +14,7 @@ export  function HomeCarousel({items,}: {
     }[]
 }) {
     const plugin = React.useRef(
-        Autoplay({delay: 3000, stopOnInteraction: true })
+        Autoplay({delay: 2000, stopOnInteraction: true })
     )
     
 return (
@@ -23,7 +23,7 @@ return (
       plugins={[plugin.current]}
       className="w-full mx-auto"
       onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
+      onMouseLeave={() => plugin.current.play()}
       >
         <CarouselContent>
             {items.map((item) => (
