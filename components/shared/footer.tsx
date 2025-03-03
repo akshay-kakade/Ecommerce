@@ -24,7 +24,7 @@ export default function Footer() {
             </Button>
            </div>
            <div className="p-4">
-            <div className="flex justify-center gap-3 text-sm ">
+            <div className="flex justify-center gap-3 text-sm text-amber-800">
                 <Link className="hover:underline hover:text-amber-600" href="/page/conditon-of-use">Terms And Conditions,</Link>
                 <Link className="hover:underline hover:text-amber-600 " href="/page/privacy-policy">Privacy Policy,</Link>
                 <Link className="hover:underline hover:text-amber-600" href="/page/help">Help</Link>
