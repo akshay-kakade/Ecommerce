@@ -257,7 +257,7 @@ const users: IUserInput[] = [
     },
     paymentMethod: 'PayPal',
     emailVerified: false,
-  },
+  }, 
 ]
 
 
