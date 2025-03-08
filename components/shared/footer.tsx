@@ -14,7 +14,7 @@ export default function Footer() {
            <div className="w-full">
             <Button
             variant='ghost'
-            className="bg-gray-50 w-full rounded-none"
+            className="bg-amber-100 w-full rounded-none cursor-pointer"
             onClick={() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }}

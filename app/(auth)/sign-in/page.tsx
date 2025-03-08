@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import CredentialsSignInForm from './credentials-signin-form'
 import { Button } from '@/components/ui/button'
 import { APP_NAME } from '@/lib/constants'
+import { GoogleSignInForm } from './google-signin-form'
 
 
 export const metadata: Metadata = {
@@ -39,8 +40,8 @@ export default async function SignInPage(props: {
           <div>
             <CredentialsSignInForm />
             <SeparatorWithOr />
-            <div className='mt-4'>
-             
+            <div className='mt-4 cursor-pointer '>
+             <GoogleSignInForm />
             </div>
           </div>
         </CardContent>
