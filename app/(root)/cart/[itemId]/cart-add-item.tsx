@@ -85,7 +85,7 @@ export default function CartAddItem({ itemId }: { itemId: string }) {
                   href='/checkout'
                   className={cn(buttonVariants(), 'rounded-full w-full')}
                 >
-                  Proceed to checkout (
+                  Place Order (
                   {items.reduce((a, c) => a + c.quantity, 0)} items)
                 </Link>
                 <Link

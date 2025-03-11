@@ -186,7 +186,7 @@ export default function CartPage() {
                     onClick={() => router.push('/checkout')}
                     className='rounded-full w-full cursor-pointer hover:bg-gray-100'
                   >
-                    Proceed to Checkout
+                    Place Order
                   </Button>
                 </CardContent>
               </Card>
