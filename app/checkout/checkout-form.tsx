@@ -37,6 +37,8 @@ import ProductPrice from '@/components/shared/product/product-price'
 import { APP_NAME, AVAILABLE_DELIVERY_DATES, AVAILABLE_PAYMENT_METHODS, DEFAULT_PAYMENT_METHOD } from '@/lib/constants'
 import useIsMounted from '@/hooks/use-is-mouned'
 import CheckoutFooter from './checkout-footer'
+import { createOrder } from '@/lib/actions/order.action'
+import toast from 'react-hot-toast'
 
 const shippingAddressDefaultValues =
   process.env.NODE_ENV === 'development'
@@ -77,6 +79,7 @@ const CheckoutForm = () => {
     setPaymentMethod,
     updateItem,
     removeItem,
+    clearCart,
     setDeliveryDateIndex,
   } = useCartStore()
   const isMounted = useIsMounted()
@@ -108,7 +111,26 @@ const CheckoutForm = () => {
     useState<boolean>(false)
 
   const handlePlaceOrder = async () => {
-    //todo
+    const res = await createOrder({
+      items,
+      shippingAddress,
+      expectedDeliveryDate: calculateFutureDate(
+        AVAILABLE_DELIVERY_DATES[deliveryDateIndex!].daysToDeliver
+      ),
+      deliveryDateIndex,
+      paymentMethod,
+      itemsPrice,
+      shippingPrice,
+      taxPrice,
+      totalPrice,
+    })
+    if (!res.success) {
+      toast.error(res.message)
+    } else { 
+      toast.success(res.message)
+      clearCart()
+      router.push(`/checkout/${res.data?.orderId}`)
+    }
   }
   const handleSelectPaymentMethod = () => {
     setIsAddressSelected(true)

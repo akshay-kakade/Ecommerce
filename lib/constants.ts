@@ -1,4 +1,8 @@
 export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'SwiftStore'
+export const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000'
+export const SENDER_NAME = process.env.SENDER_NAME || 'SwiftStore'
+export const SENDER_EMAIL = process.env.SENDER_EMAIL || 'swiftstore@gmail.com'
+
 export const APP_SLOGAN =
 process.env.NEXT_PUBLIC_APP_SLOGAN || 'Buy Swiftly.'
 export const APP_DESCRIPTION =
@@ -16,11 +20,6 @@ export const AVAILABLE_PAYMENT_METHODS = [
         name: 'PayPal',
         commission: 0,
         isDefault:true,
-    },
-    {
-        name: 'Card',
-        commission: 0,
-        isDefault:false,
     },
     {
         name: 'Cash on Delivery',
