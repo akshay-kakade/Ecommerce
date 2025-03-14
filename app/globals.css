@@ -147,5 +147,8 @@
   .flex-between {
     @apply flex justify-between items-center;
   }
+  .item-button {
+    @apply p-3 hover:bg-amber-300 text-blue-500 hover:no-underline;
+  }
  
 }
