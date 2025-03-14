@@ -28,7 +28,7 @@ export default async function Search() {
             <Input
                 name="q"
                 type="search"
-                placeholder={`Search Site ${APP_NAME}`} 
+                placeholder={`Search products ${APP_NAME}`} 
                 className="flex-1 rounded-none dark:border-gray-200 bg-gray-100 text-black text-base h-full"
                 />
              
