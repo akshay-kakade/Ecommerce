@@ -22,7 +22,7 @@ export const AVAILABLE_PAYMENT_METHODS = [
         isDefault:true,
     },
     {
-        name: 'Cash on Delivery',
+        name: 'Cash On Delivery',
         commission: 0,
         isDefault:false,
     },

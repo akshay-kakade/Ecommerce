@@ -1,4 +1,4 @@
-/*import { SearchIcon } from "lucide-react";
+import { SearchIcon } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
     Select,
@@ -8,8 +8,9 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 import { APP_NAME } from "@/lib/constants";
-const categories = ['men', 'women', 'kids', 'accessories', 'shoes', 'electronics', 'mobile', 'laptops', 'home', 'furniture', 'beauty', 'health', 'sports', 'fitness', 'books', 'stationery', ]
+import { getAllCategories } from "@/lib/actions/product.actions";
 
+const categories = await getAllCategories()
 export default async function Search() {
     return (
         <form action='/search' method="GET" className="flex items-stretch h-10">
@@ -27,7 +28,7 @@ export default async function Search() {
             <Input
                 name="q"
                 type="search"
-                placeholder={`Search Site ${APP_NAME}`} 
+                placeholder={`Search products ${APP_NAME}`} 
                 className="flex-1 rounded-none dark:border-gray-200 bg-gray-100 text-black text-base h-full"
                 />
              
@@ -38,7 +39,9 @@ export default async function Search() {
                 </button>
         </form>
     ) 
-}*/
+}
+    
+/*
 import { SearchIcon } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
@@ -93,3 +96,4 @@ export default async function Search() {
     );
 }
 
+*/
